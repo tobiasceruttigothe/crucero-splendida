@@ -128,7 +128,7 @@
 
     .photo {
       position: relative;
-      margin-top: 40px;
+      margin-top: 56px;
       width: 100%;
       max-width: 760px;
       padding: 10px;
@@ -141,7 +141,7 @@
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       opacity: 0;
-      animation: rise 1s 0.55s ease-out forwards;
+      animation: rise 1s 0.8s ease-out forwards;
     }
 
     .photo img {
@@ -162,7 +162,7 @@
     }
 
     .countdown-label {
-      margin-top: 56px;
+      margin-top: 40px;
       font-size: 0.8rem;
       letter-spacing: 0.24em;
       text-transform: uppercase;
@@ -177,6 +177,12 @@
       gap: 14px;
       width: 100%;
       max-width: 680px;
+    }
+
+
+    .countdown-label, .countdown, .arrived, .date-line {
+      opacity: 0;
+      animation: rise 0.9s 0.55s ease-out forwards;
     }
 
     .unit {
@@ -316,11 +322,6 @@
     <h1>Rumbo al <em>mar</em></h1>
     <p class="subtitle">La familia junta otra vez, con el horizonte por delante.</p>
 
-    <figure class="photo">
-      <img src="familia.jpg" alt="Foto de la familia en la cubierta del crucero al atardecer" width="1448" height="1086">
-      <figcaption>Nosotros, listos para zarpar ✦</figcaption>
-    </figure>
-
     <p class="countdown-label">Faltan</p>
 
     <div class="countdown" role="timer" aria-live="off">
@@ -333,6 +334,11 @@
     <p class="arrived">¡Llegó el día! Buen viaje 🌊</p>
 
     <p class="date-line">Zarpamos el <strong>sábado 19 de diciembre de 2026</strong></p>
+
+    <figure class="photo">
+      <img src="familia.jpg" alt="Foto de la familia en la cubierta del crucero al atardecer" width="1448" height="1086">
+      <figcaption>Nosotros, listos para zarpar ✦</figcaption>
+    </figure>
 
     <footer>Hecho con ganas de vacaciones</footer>
   </main>
